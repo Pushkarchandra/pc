@@ -1,64 +1,85 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="pu.png" sizes="16x16 32x32" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-<html> 
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
- 
-<head> 
-<link rel="icon" href="IMG_20160323_131624.jpg" sizes="16x16" type="image/jpg">
-    <title>Marquee Tag</title> 
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
 
-    <style> 
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
 
-        .main { 
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
 
-            text-align: center; 
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
-        } 
+.btn:hover {
+  opacity: 1;
+}
+b{
+  background-color:#349bff;
+}
+</style>
+</head>
+<body>
+ <h2> <marquee><b><strong>Developed by Pushkar chandra kumar</strong></b></marquee></h2>
 
-          
+<form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf97VWd7xcA-tGOlkQ24-4Vf-GW8Ps3I1mnVWJqao1ndko-mQ/formResponse" target="_self" method="POST" style="max-width:500px;margin:auto" onsubmit="myFunction()">
+  <h2>Register Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="entry.1527881836">
+  </div>
 
-        .marq { 
-
-            padding-top: 30px; 
-
-            padding-bottom: 30px; 
-
-        } 
-
-    </style> 
-
-</head> 
-
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email"  name="entry.2114522709">
+  </div>
   
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="entry.291244217">
+  </div>
 
-<body> 
-
-    <h1 style="color:green; text-align:center;"> 
-
-      PUSHKAR CHANDRA KUMAR
-
-  </h1> 
-
+  <button type="submit" class="btn">Register</button>
+</form>
+<script>
+    function myFunction() {
+      alert("The form is add in pushkar server");
+    }
+    </script>
   
-
-   <marquee class="marq"
-
-             bgcolor="Green" 
-
-             direction="left" 
-
-             loop=""> 
-
-      <h2>  MY NAME IS PUSHKAR CHANDRA KUMAR.
-     This is my website.</h2>
-
-    </marquee> <br>
-
-  
-<img src="IMG_20160323_131624.jpg" alt="pushkar chandra kumar" height="30" width="30">
-
-</body> 
-
-  
-
-</html> 
+</body>
+</html>
